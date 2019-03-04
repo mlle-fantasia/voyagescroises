@@ -9,7 +9,7 @@ services:
       - 80
     volumes:
       - ./conf.d/upload.ini:/usr/local/etc/php/conf.d/upload.ini
-      - ./voyages-croises:/var/www/html/wp-content/themes/voyages-croises
+      - ./:/var/www/html/wp-content/themes/voyages-croises
     env_file:
       - .env
 
